@@ -1,0 +1,2677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./imereti.css">
+    <title>Imereti</title>
+</head>
+
+<body>
+    <div id="imereti-page">
+        <div class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 mt-4">
+                        <img src="./image/drosha.png" alt="flag of georgia"
+                            class="img-fluid border border-dark rounded mx-auto d-none d-sm-block" id="flag1">
+                    </div>
+                    <div class="col-8 mt-3 mt-md-0">
+                        <h1 class="display-2 text-center text-white reload" style="cursor: pointer;">იმერეთი</h1>
+                    </div>
+                    <div class="col-2 mt-4">
+                        <img src="./image/drosha.png" alt="flag of georgia"
+                            class="img-fluid border border-dark rounded mx-auto d-none d-sm-block " id="flag2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-3 bg-white p-2">
+            <!--მენიუ-->
+            <div class="row justify-content-between">
+                <div class="col-sm-6 col-md-4">
+                    <div class="container">
+                        <div class="column">
+                            <!--ქალაქები-->
+                            <div class="col-sm-6 col-md-4 col-xxl-4 mt-md-3 mt-sm-3 mt-3">
+                                <button class="btn btn-primary btn-lg " type="button" id="qalaqi">
+                                    ქალაქები
+                                </button>
+                            </div>
+
+                            <!--სოფლები-->
+                            <div class="col-sm-6 col-md-4 col-xxl-4 mt-md-3 mt-sm-3 mt-3">
+                                <button type="button" class="btn btn-primary btn-lg" id="soflebi">სოფლები</button>
+                            </div>
+                            <!--მდინარეები-->
+                            <div class="col-sm-6 col-md-4 col-xxl-4 mt-md-3 mt-sm-3 mt-3">
+                                <button type="button" class="btn btn-primary btn-lg" id="mdinareebi">მდინარეები</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-2 d-none d-md-block reload">
+                    <img src="./image/sxva/imereti.png" class="img-fluid mx-auto d-block" style="cursor: pointer;">
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="container">
+                        <div class="column">
+                            <!--კურორტები-->
+                            <div class="col-sm-6 col-md-4 col-xxl-4 mt-md-3 mt-sm-3 mt-3">
+                                <button type="button" class="btn btn-primary btn-lg" id="kurorti">კურორტები</button>
+                            </div>
+                            <!--ეკლესია მონასტრები-->
+                            <div class="col-sm-6 col-md-4 col-xxl-4 mt-md-3 mt-sm-3 mt-3">
+                                <button type="button" class="btn btn-primary btn-lg">მონასტრები</button>
+                            </div>
+                            <!--ღირსშესანიშნაობები-->
+                            <div class="col-sm-6 col-md-4 col-xxl-4 mt-md-3 mt-sm-3 mt-3">
+                                <button type="button" class="btn btn-primary btn-lg"
+                                    id="sights">ღირსშესანიშნაობები</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--ქალაქების ჩამონათვალი-->
+    <div class="container avoie p-2" id="showqalaqebi">
+        <div class="row justify-content-between">
+            <!---->
+            <!--ღილაკები-->
+            <div class="col-lg-3 col-md-4 col-sm-6 mt-3 d-flex justify-content-md-center">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#zestafoni"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ზესტაფონი
+                </button>
+            </div>
+            <div class="collapse mt-2" id="zestafoni">
+                <i class="fa fa-window-close" data-bs-toggle="collapse" data-bs-target="#zestafoni"
+                    aria-expanded="false" aria-controls="collapseExample" role="button" style="font-size: 35px; "></i>
+                <div class="card text-center">
+                    <div class="card-header">
+                        ზესტაფონი
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">ზესტაფონი</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content. With
+                            supporting text below as a natural lead-in to additional content. With supporting text below
+                            as a natural lead-in to additional content. With supporting
+                            text below as a natural lead-in to additional content.
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        აქ რამის დამატება შეილება
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 mt-3 d-flex justify-content-md-center">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#samtredia"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    სამტრედია
+                </button>
+            </div>
+
+            <div class="collapse mt-2" id="samtredia">
+                <i class="fa fa-window-close" data-bs-toggle="collapse" data-bs-target="#samtredia"
+                    aria-expanded="false" aria-controls="collapseExample" role="button" style="font-size: 35px;"></i>
+                <div class="card text-center">
+                    <div class="card-header">
+                        სამტრედია
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Special title treatment</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        აქ რამის დამატება შეილება
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-md-center mt-3 ">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#qutaisi"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ქუთაისი
+                </button>
+            </div>
+            <div class="collapse mt-2" id="qutaisi">
+                <div class="card text-center">
+                    <div class="card-header text-white bg-primary mb-1 qalaqiHeader">
+                        ქუთაისის ძველი სახელებია:<strong> აია, ქუთაია, ქუთათისიუმი</strong>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title myTitle">ქუთაისი</h3>
+                        <!--<hr class="mt-2" style="height: 10px; ">-->
+                        <p class="card-text">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <img src="./image/qalaqebi/q.qutaisi.jpg" alt="qutaisi" class="img-fluid">
+                                    <ul>
+                                        <dl class="row mt-3">
+                                            <dt>დაარსდა</dt>
+                                            <dd class="bg-warning mt-1">
+                                                ძვ.წ III-საუკუნეში
+                                            </dd>
+                                            <dt>ცენტრის სიმაღლე</dt>
+                                            <dd class="bg-warning mt-1">
+                                                125-300მ
+                                            </dd>
+                                            <dt>ეროვნული შემადგენლობა</dt>
+                                            <dd class="bg-warning mt-1">
+                                                ქართველები
+                                            </dd>
+                                            <dt>მოსახლეობა</dt>
+                                            <dd class="bg-warning mt-1"> 147,635 კაცი (2014).</dd>
+                                        </dl>
+                                    </ul>
+
+                                </div>
+                                <div class="col-sm-12 col-md-4 mt-4">
+                                    <ul class="liC">
+                                        <li class="mt-1">პირველად იხსენიება ასევე ძვ.წ III საუკუნეში.</li>
+                                        <li class="mt-1">ქალაქის მიმდებარედ ადამიანი ქვედა პალეოლითის ხანაშიც ცხოვრობდა.
+                                        </li>
+                                        <li class="qalaqiP mt-1">978 წელს ბაგრატ III-მ საქართველოს სამეფო დედაქალაქი
+                                            ქუთაისში გადაიტანა 1122წლამდე ასე იყო.</li>
+                                        <li class="mt-1">1122 წელს საქართველოს დედაქალიქის სტატუსი დავით აღმაშენებელმა
+                                            თბილისს მიანიჭა.</li>
+                                        <li class="mt-1">1490 წელს კონსტანტინე II-ს მიერ მოწვეულმა სამეფო დარბაზმა
+                                            საქართველოს ფაქტობრივი დაშლა ფორმალურადაც სცნო და ამის შემდეგ ქუთაისი ხდება
+                                            იმერეთის სამეფოს დედაქალაქი.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-md-4 mt-4">
+                                    <ul class="liC">
+                                        <li class="bg-warning mt-1">1669 წელს ოსმალებმა ქალაქი დაიკავეს და ის ერთი
+                                            საუკუნის განმავლობაში ეკავათ.</li>
+                                        <li class="mt-1">1737 წელს შეიქმნა პირველი ქუთაისის რუკა ის ტიმოთე გაბაშვილმა
+                                            შეადგინა.</li>
+                                        <li class="mt-1">1770 წელს ოსმალები განდევნა სოლომონ I-მა.</li>
+                                        <li class="mt-1">1862 წელს რიონზე ააგეს პირველი ლითონის ხიდი კავკასიაში რომელსაც
+                                            წითელი ხიდი ეწოდა.</li>
+                                        <li class="mt-1">1880 წელს ქუთაისში გაიხსნა ქართული გიმნაზია.</li>
+                                        <li class="mt-1">1890 წლისთვის ქუთაისის მოსახლეობა 32 000 გადააჭარბა.</li>
+                                        <li class="mt-1">2013 წლიდან ქუთაისთან ამოქმედდა ქუთაისის საერთაშორისო აეროპორტი
+                                        </li>
+                                        <li class="mt-1">2012-2018 წლებში ქუთაისი საქართველოს პარლამენტის ადგილსამყოფელი
+                                            იყო. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                ქუთაისში 12 ადმინისტრაციული ერთეულია: ავტოქარხანა, გამარჯვება, გუმათი, ვაკისუბანი,
+                                კახიანოური, მუხნარი, ნიკეა, საფიჩხია, სულხან-საბა, უქიმეირიონი, ქალაქ-მუზეუმი, ძელქვიანი
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-primary text-white mt-2">
+                        <i class="fa fa-window-close" data-bs-toggle="collapse" data-bs-target="#qutaisi"
+                            aria-expanded="false" aria-controls="collapseExample" role="button"
+                            style="font-size: 35px; "></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-md-center  mt-3">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#chiatura"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ჭიათურა
+                </button>
+            </div>
+            <div class="collapse mt-2" id="chiatura">
+                <div class="card text-center">
+                    <div class="card-header">
+                        ჭიათურა
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Special title treatment</h3>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        აქ რამის დამატება შეილება
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3  col-md-4 col-sm-6  d-flex justify-content-md-center  mt-3">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#bagdati"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ბაღდათი
+                </button>
+            </div>
+            <div class="collapse mt-2" id="bagdati">
+                <div class="card card-body mt-2">
+                    <p class="classp1"> <strong>ბაღდათი</strong> pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-md-center  mt-3">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#wyaltubo"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    წყალტუბო
+                </button>
+            </div>
+            <div class="collapse mt-2" id="wyaltubo">
+                <div class="card card-body mt-2">
+                    <p class="classp1"> <strong>წყალტუბო</strong> pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-md-center  mt-3">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#sachxere"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    საჩხერე
+                </button>
+            </div>
+            <div class="collapse" id="sachxere">
+                <div class="card card-body mt-2">
+                    <p class="classp1"> <strong>საჩხერე</strong> pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6   d-flex justify-content-md-center  mt-3">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#terjola"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    თერჯოლა
+                </button>
+            </div>
+
+            <div class="collapse" id="terjola">
+                <div class="card card-body mt-2">
+                    <p class="classp1"> <strong>თერჯოლა</strong> pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-md-center  mt-3">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#tyibuli"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ტყიბული
+                </button>
+            </div>
+
+            <div class="collapse" id="tyibuli">
+                <div class="card card-body mt-2">
+                    <p class="classp1"> <strong>ტყიბული</strong> pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-md-center  mt-3">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#vani"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ვანი
+                </button>
+            </div>
+
+            <div class="collapse" id="vani">
+                <div class="card card-body mt-2">
+                    <p class="classp1"> <strong>ვანი</strong> pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6  d-flex justify-content-md-center  mt-3">
+                <button class="btn btn-info col-12" type="button" data-bs-toggle="collapse" data-bs-target="#xoni"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ხონი
+                </button>
+            </div>
+            <div class="collapse" id="xoni">
+                <div class="card card-body mt-2">
+                    <p class="classp1"> <strong>ხონი</strong> pariatur cliche reprehenderit, enim eiusmod high life
+                        accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                        anderson cred nesciunt sapiente ea proident.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--მდინარეების ჩამონათვალი-->
+    <div class="container  p-2" id="showmdinareebi">
+        <div class="card-group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 mt-2 col-md-4 d-flex justify-content-between">
+                        <div class="card border-primary  mb-5">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბორიმელა</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ზემო იმერეთის რეგიონი.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მესხეთის ჩრდილოეთ კალთა.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;"> 11კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მდინარე ძირულა
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-2  col-md-4 d-flex justify-content-between">
+                        <div class="card border-primary  mb-5">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბჟოლისხევი</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ხარაგაულის მუნიციპალიტეტი
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მესხეთის ქედი
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            27.5კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ჩხერიმელა
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-2 col-md-4 d-flex justify-content-between">
+                        <div class="card border-primary mb-5 ">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center ">ბუჯა</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ზემო იმერეთის რეგიონი.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            რაჭის ქედის სამხრეთ კალთა
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;"> 41კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მდინარე ძუსა, წარმოქმნის მდინარე ჩოლაბურს
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--მეორე სამეული-->
+                    <div class="col-sm-6 mt-2 col-md-4 d-flex justify-content-between">
+                        <div class="card border-primary mb-5">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">დუმალა</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ზემო იმერეთის რეგიონი.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მესხეთის ჩრდილოეთ კალთა.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;"> 11კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მდინარე ძირულა
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mt-sm-2 d-flex justify-content-between">
+                        <div class="card border-primary ">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ზვარულა</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ხარაგაულის მუნიციპალიტეტი
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მესხეთის ქედის, ჩრდილოეთ კალთა.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            8.4კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ჩხერიმელა
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-sm-2 col-md-4 d-flex justify-content-between">
+                        <div class="card border-primary ">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center ">კაცხურა</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            რაჭის ქედის სამხრეთ კალთა.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            რაჭის ქედის სამხრეთ კალთა
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;"> 13კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            --------------
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--მდინარეების მეორე წყობა-->
+        <div class="card-group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 mt-2  col-md-4 d-flex justify-content-between">
+                        <div class="card border-primary  mb-1">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">კვინისწყალი</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ვანის მუნიციპალიტეტი
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მესხეთის ქედის ჩრდილოეთ განშტოებაზე არსებული მთა კვინისი.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            20.5კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ამაღლების სიახლოვეს რიონის სხვა რამდენიმე ნაკადში იხლართება.
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-2  col-md-4 d-flex justify-content-between">
+                        <div class="card border-primary  mb-1">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">კორისწყალი</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მდინარე ბაღდათის და ვანის მუნიციპალიტეტებში, რიონის მარცხენა შენაკადი.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მთა კვინისთავის ჩრდილო-დასავლეთით 4 კმ-ში.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            28კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            რიონი
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 mt-2  col-md-4 d-flex justify-content-between">
+                        <div class="card border-primary  mb-1">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ლაიშურა</h5>
+                                <hr style="height: 3px;" class="bg-secondary">
+                                <div class="card-body text-primary " style="letter-spacing: 1px;">
+                                    <dl class="row">
+                                        <dt class="text-white bg-primary d-flex justify-content-center">მდებარეობა</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ბაღდათის რაიონი.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სათავე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            მესხეთის ქედის კალთა, 2220 მ სიმაღლეზე.
+                                        </dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">სიგრძე</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            23კმ.</dd>
+                                        <dt class="text-white bg-primary d-flex justify-content-center">შესართავი</dt>
+                                        <dd class="text-secondary d-flex justify-content-center mt-1"
+                                            style="font-weight: bolder;">
+                                            ------------
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--სოფლის გვერდები-->
+        <nav aria-label="imersoflisPages">
+            <ul class="pagination justify-content-center mt-3">
+                <li class="page-item"><a class="page-link" id="mdinPage1" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" id="mdinPage2" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" id="mdinPage3" href="#">3</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!--მუნიციპალიტეტები-->
+    <div class="contaienr " id="municipaliteti">
+        <div class="row">
+            <!--ზესტაფონის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center sacdeli">
+                <button class="btn btn-info " type="button" data-bs-toggle="collapse" data-bs-target="#zstmun"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ზესტაფონის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--ზესტაფონის სოფლები-->
+            <div class="collapse  mt-3" id="zstmun">
+                <!-- Search functionality -->
+                <nav class="navbar navbar-light justify-content-center mt-1">
+                    <form class="form-inline">
+                        <input class="form-control form-control-lg mr-sm-2" type="search" placeholder="სოფელი"
+                            aria-label="Search" id="search">
+                    </form>
+                </nav>
+
+                <div class="card-deck" id="sofCardPage1">
+                    <!--პირველი წყობა-->
+                    <div class="container">
+                        <div class="card-group">
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <!--<div id="anime">-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard1">ამსაისი</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard1">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს ზესტაფონიდან 13 კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard1">
+                                            430მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofErovCard1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard1"> 64 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                                <!--</div>-->
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard2">არგვეთა</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard2">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს ზესტაფონიდან 7 კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard2">
+                                            120მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard2"> 1329 კაცი (2014).</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard3">აჭარა</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard3">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს,ზესტაფონიდან 14 კილომეტრი.</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard3">
+                                            400მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard3"> 80 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--მეორე წყობა-->
+                    <div class="container mt-2">
+                        <div class="card-group">
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard4">ახალი სვირი
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard4">მდებარეობს კოლხეთის დაბლობზე
+                                        მდინარე ყვირილის მარცხენა მხარეს ზესტაფონიდან 14 კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard4">
+                                            122მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard4"> 367 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard5">აჯამეთი</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard5">მდეობარეობს კოლხეთის
+                                        დაბლობზე.მდინარე ყვირილის მარცხენა მხარეს ზესტაფონიდან 26კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard5">
+                                            103მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard5"> 296 კაცი (2014).</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard6">ბეღლევი</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard6">მდებარეობს იმერეთის მაღლობის
+                                        დასავლეთ ნაწილში.მდინარე ყვირილის მარჯვენა ნაპირას,ზესტაფონიდან 15კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard6">
+                                            400მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard6"> 235 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--მესამე წყობა-->
+                    <div class="container mt-2">
+                        <div class="card-group">
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard7">გამოღმა
+                                        ბოსლევი</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard7">მდებარეობს მდინარე ყვირილის
+                                        მარჯვენა ნაპირას ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის
+                                        საავტომობილო გზაზე,ზესტაფონიდან 13 კილომეტრი</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard7">
+                                            540მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofErovCard7">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard7"> 397 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard8">გაღმა ბოსლევი
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard8">მდებარეობს ჭიათურის
+                                        პლატოზე,მდინარე ყვირილის მარცხენა ნაპირას ,ზესტაფონიდან 18 კილომეტრი</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard8">
+                                            500მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard8"> 271 კაცი (2014).</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard9">დიდწიფელა
+                                    </h4>
+                                    <div class="bg-warning">
+                                        <p class="card-text mt-3 bg-light" id="sofTextCard9">მდებარეობს ზემო იმერეთის
+                                            პლატოზე,მდინარე ყვირილის ხეობაში ზესტაფონიდან 21 კმ</p>
+                                    </div>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard9">
+                                            560მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard9"> 63 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--საცდელი ვერსია მეორე გვერდი-->
+                <div class="card-deck d-none" id="sofCardPage2">
+                    <!--პირველი წყობა-->
+                    <div class="container">
+                        <div class="card-group">
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <!--<div id="anime">-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard1">დილიკაური
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard1">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს ზესტაფონიდან 13 კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard1">
+                                            430მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofErovCard1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard1"> 64 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                                <!--</div>-->
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard2">ვაშპარიანი
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard2">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს ზესტაფონიდან 7 კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard2">
+                                            120მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard2"> 1329 კაცი (2014).</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard3">დიდი განთიადი
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard3">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს,ზესტაფონიდან 14 კილომეტრი.</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard3">
+                                            400მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard3"> 80 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--მეორე წყობა-->
+                    <div class="container mt-2">
+                        <div class="card-group">
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard4">ზედა ილემი
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard4">მდებარეობს კოლხეთის დაბლობზე
+                                        მდინარე ყვირილის მარცხენა მხარეს ზესტაფონიდან 14 კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard4">
+                                            122მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard4"> 367 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard5">ზედა კვალითი
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard5">მდეობარეობს კოლხეთის
+                                        დაბლობზე.მდინარე ყვირილის მარცხენა მხარეს ზესტაფონიდან 26კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard5">
+                                            103მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard5"> 296 კაცი (2014).</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard6">ზედა კლდეეთი
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard6">მდებარეობს იმერეთის მაღლობის
+                                        დასავლეთ ნაწილში.მდინარე ყვირილის მარჯვენა ნაპირას,ზესტაფონიდან 15კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard6">
+                                            400მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard6"> 235 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--მესამე წყობა-->
+                    <div class="container mt-2">
+                        <div class="card-group">
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard7">ზედა საქარა
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard7">მდებარეობს მდინარე ყვირილის
+                                        მარჯვენა ნაპირას ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის
+                                        საავტომობილო გზაზე,ზესტაფონიდან 13 კილომეტრი</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard7">
+                                            540მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofErovCard7">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard7"> 397 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard8">ზედა წევა
+                                    </h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard8">მდებარეობს ჭიათურის
+                                        პლატოზე,მდინარე ყვირილის მარცხენა ნაპირას ,ზესტაფონიდან 18 კილომეტრი</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard8">
+                                            500მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard8"> 271 კაცი (2014).</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard9">ზედა წიფლვაკე
+                                    </h4>
+                                    <div class="bg-warning">
+                                        <p class="card-text mt-3 bg-light" id="sofTextCard9">მდებარეობს ზემო იმერეთის
+                                            პლატოზე,მდინარე ყვირილის ხეობაში ზესტაფონიდან 21 კმ</p>
+                                    </div>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard9">
+                                            560მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard9"> 63 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--მესამე გვერდი-->
+                <div class="card-deck d-none" id="sofCardPage3">
+                    <div class="container">
+                        <div class="card-group">
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <!--<div id="anime">-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard1">გიორგი
+                                        ალადაშვილი</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard1">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს ზესტაფონიდან 13 კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard1">
+                                            430მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofErovCard1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard1"> 64 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                                <!--</div>-->
+                            </div>
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard2">ქეთა
+                                        ალადაშვილი</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard2">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს ზესტაფონიდან 7 კმ</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard2">
+                                            120მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard2"> 1329 კაცი (2014).</dd>
+                                    </dl>
+
+                                </div>
+                            </div>
+                            <div class="card">
+                                <!--თუ რამე აქ ჯდება სურათი-->
+                                <div class="card-body">
+                                    <h4 class="card-title d-flex justify-content-center" id="sofNameCard3">ალადა</h4>
+                                    <p class="card-text mt-3 bg-light" id="sofTextCard3">მდებარეობს მდინარე ძირულის
+                                        მარჯვენა მხარეს,ზესტაფონიდან 14 კილომეტრი.</p>
+                                    <dl class="row">
+                                        <dt>ცენტრის სიმაღლე</dt>
+                                        <dd class="bg-warning mt-1" id="sofHeightCard3">
+                                            400მ
+                                        </dd>
+                                        <dt>ეროვნული შემადგენლობა</dt>
+                                        <dd class="bg-warning mt-1">
+                                            ქართველები
+                                        </dd>
+                                        <dt>მოსახლეობა</dt>
+                                        <dd class="bg-warning mt-1" id="sofMosaxCard3"> 80 კაცი (2014).</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--სოფლის გვერდები-->
+                <nav aria-label="imersoflisPages" id="imerSofPageBtns">
+                    <ul class="pagination justify-content-center mt-3">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" id="sofPage1" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" id="sofPage2" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" id="sofPage3" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <i class="fa fa-window-close close" data-bs-toggle="collapse" data-bs-target="#zstmun"
+                                    aria-expanded="false" aria-controls="collapseExample" role="button"
+                                    style="font-size: 35px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--ბაღდათის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#bagdt"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ბაღდათის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--ბაღდათის სოფლები-->
+            <div class="collapse  mt-2" id="bagdt">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container mt-2">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბეღლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">გამოღმა</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბოსლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--ვანის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#van"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ვანის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--ვანის სოფლები-->
+            <div class="collapse mt-2" id="van">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container mt-2">
+                    <div class="card-group">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბეღლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">გამოღმა</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბოსლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--თერჯოლის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#terj"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    თერჯოლას მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--თერჯოლის სოფლები-->
+            <div class="collapse mt-2" id="terj">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container mt-2">
+                    <div class="card-group">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბეღლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">გამოღმა</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბოსლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--სამტრედიის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#samtr"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    სამტრედიის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--სამტრედიის სოფლები-->
+            <div class="collapse mt-2" id="samtr">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container mt-2">
+                    <div class="card-group">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბეღლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">გამოღმა</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბოსლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--საჩხერის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#sachx"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    საჩხერის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--საჩხერის სოფლები-->
+            <div class="collapse mt-2" id="sachx">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container mt-2">
+                    <div class="card-group">
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბეღლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">გამოღმა</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to
+                                    additional content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title d-flex justify-content-center">ბოსლევი</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This card has even longer content than the first to
+                                    show that equal height action.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--ტყიბულის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#tyib"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ტყიბულის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--ტყიბულის სოფლები-->
+            <div class="collapse mt-2" id="tyib">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--წყალტუბოს მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#wyalt"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    წყალტუბოს მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--წყალტუბოს სოფლები-->
+            <div class="collapse mt-2" id="wyalt">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--ჭიათურის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#chiat"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ჭიათურის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--ჭიათურის სოფლები-->
+            <div class="collapse mt-2" id="chiat">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--ხარაგაულის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#xarag"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ხარაგაულის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--ხარაგაულის სოფლები-->
+            <div class="collapse mt-2" id="xarag">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!--ხონის მუნიციპალიტეტი-->
+            <div class="col-12 mt-3 d-flex justify-content-center">
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#xon"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    ხონის მუნიციპალიტეტის სოფლები
+                </button>
+            </div>
+            <!--ხონის სოფლები-->
+            <div class="collapse mt-2" id="xon">
+                <div class="container">
+                    <div class="card-group">
+                        <div class="card">
+                            <!--თუ რამე აქ ჯდება სურათი-->
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">ბეღლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს იმერეთის მაღლობის დასავლეთ ნაწილში,
+                                    მდინარე ყვირილას მარჯვენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        400მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 235კაცი (2014).</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გამოღმა ბოსლვები</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს მდინარე ყვირილის მარჯვენა ნაპირას.
+                                    ზესტაფონი-ჭიათურის შიდასახელმწიფოებრივი მნიშვნელობის საავტომობილო გზაზე.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        540მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 397კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title d-flex justify-content-center">გაღმა ბოსლევი</h4>
+                                <p class="card-text mt-3 bg-light">მდებარეობს ჭიათურის პლატოზე, მდინარე ყვირილის
+                                    მარცხენა ნაპირას.</p>
+                                <dl class="row">
+                                    <dt>ცენტრის სიმაღლე</dt>
+                                    <dd class="bg-warning mt-1">
+                                        500მ
+                                    </dd>
+                                    <dt>ეროვნული შემადგენლობა</dt>
+                                    <dd class="bg-warning mt-1">
+                                        ქართველები
+                                    </dd>
+                                    <dt>მოსახლეობა</dt>
+                                    <dd class="bg-warning mt-1"> 271კაცი (2014).</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--კურორტები accprdion  d-flex justify-content-center-->
+    <div class="container p-2" id="showkurorti" style="display: none;">
+        <div class="row">
+            <div class="accordion" id="imerKur">
+                <div class="accordion-item mt-1 shadow-sm p-3 mb-3 bg-body rounded">
+                    <h5 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" style="height: 20px;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            ზეკარი
+                        </button>
+                    </h5>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#imerKur">
+                        <div class="accordion-body">
+                            <div class="container">
+                                <dl class="row">
+                                    <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">სახეობა</dt>
+                                    <dd class="col-sm-12 text-dark d-flex justify-content-center ">
+                                        ბალნეოლოგიურ-კლიმატური კურორტი ბაღდათის მუნიციპალიტეტში.</dd>
+
+                                    <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">მდებარეობა
+                                    </dt>
+                                    <dd class="col-sm-12 text-dark d-flex justify-content-center">
+                                        <p>მესხეთის ჩრდილოეთ კალთა</p>
+                                    </dd>
+                                    <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">სამკურნალო
+                                        ფაქტორი</dt>
+                                    <dd class="col-sm-12 text-dark ">მინერალური წყლის აბაზანები, პასიური კლიმატოთერაპია.
+                                        სამკურნალო ჩვენებები: ქრონიკული ართრიტი, ნეფრიტი, ნევრალგია, რადიკულიტი და
+                                        ნერვული სისტემის ფუნქციური დაავადებები, რევმატიზმი.</dd>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <dt class="col-sm-12 bg-info text-white text-center">მკურნალობა</dt>
+                                                <dd class="col-sm-12 text-muted text-center">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Cras justo odio</li>
+                                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                        <li class="list-group-item">Morbi leo risus</li>
+                                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                                        <li class="list-group-item">Vestibulum at eros</li>
+                                                    </ul>
+                                                </dd>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <dt class="col-sm-12 bg-warning text-center">მანძილი</dt>
+                                                <dd class="col-sm-12 text-muted text-center">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Cras justo odio</li>
+                                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                        <li class="list-group-item">Morbi leo risus</li>
+                                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                                        <li class="list-group-item">Vestibulum at eros</li>
+                                                    </ul>
+                                                </dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mt-1  shadow-sm p-3 mb-3 bg-body rounded">
+                    <h5 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" style="height: 20px;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            საირმე
+                        </button>
+                    </h5>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#imerKur">
+                        <div class="accordion-body">
+                            <dl class="row">
+                                <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">სახეობა</dt>
+                                <dd class="col-sm-12 text-dark d-flex justify-content-center ">ბალნეოლოგიურ-კლიმატური
+                                    კურორტი ბაღდათის მუნიციპალიტეტში.</dd>
+
+                                <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">მდებარეობა</dt>
+                                <dd class="col-sm-12 text-dark d-flex justify-content-center">
+                                    <p>მდებარეობს მესხეთის ქედის ჩრდილოეთ კალთაზე. მდინარე წაბლარისწყლის ხეობაში</p>
+                                </dd>
+                                <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">სამკურნალო
+                                    ფაქტორი</dt>
+                                <dd class="col-sm-12 text-dark ">სამკურნალო ფაქტორია „ნარზანის“ ტიპის ნახშირმჟავა
+                                    ჰიდროკარბონატული კალციუმ-ნატრიუმიანი (წყარო № 1 და № 3) და „ბორჯომის“ ტიპის
+                                    ნახშირმჟავა ჰიდროკარბონატული ნატრიუმიანი (ბურღილი № 4 და № 5) მინერალური წყალი
+                                    „საირმე“. საირმეში
+                                    არის სანატორიუმი, დასასვენებელი და საკურორტო პოლიკლინიკა. სეზონი — მაისი-ნოემბერი
+                                </dd>
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <dt class="col-sm-12 bg-info text-white text-center">ინფო რამე</dt>
+                                            <dd class="col-sm-12 text-muted text-center">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Cras justo odio</li>
+                                                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                    <li class="list-group-item">Morbi leo risus</li>
+                                                    <li class="list-group-item">Porta ac consectetur ac</li>
+                                                    <li class="list-group-item">Vestibulum at eros</li>
+                                                </ul>
+                                            </dd>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <dt class="col-sm-12 bg-warning text-center">მანძილი</dt>
+                                            <dd class="col-sm-12 text-muted text-center">
+                                                <p>fjakfhajfahjfhajfah</p>
+                                            </dd>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item mt-1 shadow-sm p-3 mb-3 bg-body rounded">
+                    <h5 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" style="height: 20px;" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            ამაღლება
+                        </button>
+                    </h5>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#imerKur">
+                        <div class="accordion-body">
+                            <dl class="row">
+                                <dl class="row">
+                                    <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">სახეობა</dt>
+                                    <dd class="col-sm-12 text-dark d-flex justify-content-center ">
+                                        ბალნეოლოგიურ-კლიმატური კურორტი ბაღდათის მუნიციპალიტეტში.</dd>
+
+                                    <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">მდებარეობა
+                                    </dt>
+                                    <dd class="col-sm-12 text-dark d-flex justify-content-center">
+                                        <p>მდებარეობს მესხეთის ქედის ჩრდილოეთ კალთაზე. მდინარე წაბლარისწყლის ხეობაში</p>
+                                    </dd>
+                                    <dt class="col-sm-12 text-white bg-info d-flex justify-content-center">სამკურნალო
+                                        ფაქტორი</dt>
+                                    <dd class="col-sm-12 text-dark ">სამკურნალო ფაქტორია „ნარზანის“ ტიპის ნახშირმჟავა
+                                        ჰიდროკარბონატული კალციუმ-ნატრიუმიანი (წყარო № 1 და № 3) და „ბორჯომის“ ტიპის
+                                        ნახშირმჟავა ჰიდროკარბონატული ნატრიუმიანი (ბურღილი № 4 და № 5) მინერალური წყალი
+                                        „საირმე“. საირმეში
+                                        არის სანატორიუმი, დასასვენებელი და საკურორტო პოლიკლინიკა. სეზონი —
+                                        მაისი-ნოემბერი</dd>
+
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 col-sm-6">
+                                                <dt class="col-sm-12 bg-info text-white text-center">ინფო რამე</dt>
+                                                <dd class="col-sm-12 text-muted text-center">
+                                                    <ul class="list-group">
+                                                        <li class="list-group-item">Cras justo odio</li>
+                                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                                        <li class="list-group-item">Morbi leo risus</li>
+                                                        <li class="list-group-item">Porta ac consectetur ac</li>
+                                                        <li class="list-group-item">Vestibulum at eros</li>
+                                                    </ul>
+                                                </dd>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <dt class="col-sm-12 bg-warning text-center">მანძილი</dt>
+                                                <dd class="col-sm-12 text-muted text-center">
+                                                    <p>fjakfhajfahjfhajfah</p>
+                                                </dd>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </dl>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--ღირსშესანიშნაობები-->
+    <div class="container p-2" id="showSights" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header" id="heading1">
+                            <a class="nav-link" href="#mdo1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapseOne"
+                                    style="font-size: 1.0rem !important;">
+                                    კაცხის სვეტი
+                                </button>
+                            </a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header" id="heading2">
+                            <a class="nav-link" href="#mdo2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo"
+                                    style="font-size: 1.0rem !important;">
+                                    ოკაცეს კანიონი
+                                </button>
+                            </a>
+                        </h5>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="accordion-item">
+                        <h5 class="accordion-header" id="heading3">
+                            <a class="nav-link" href="#mdo3">
+                                <button class="accordion-button collapsed" type="button" href="#"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
+                                    aria-controls="collapseThree" style="font-size: 1.0rem !important;">
+                                    ბაგრატის ტაძარი
+                                </button>
+                            </a>
+                        </h5>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="imerSight">
+            <div id="collapse1" class="accordion-collapse collapse mt-1" aria-labelledby="heading1"
+                data-bs-parent="#imerSight">
+                <div class="accordion-body" id="mdo1">
+                    <strong>კაცხის სვეტი</strong> It is shown by default, until the collapse plugin adds the appropriate
+                    classes that we use to style each element. These classes control the overall appearance, as well as
+                    the showing and hiding via CSS
+                    transitions. You can modify any of this with custom CSS or overriding our default variables. It's
+                    also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though
+                    the transition does limit overflow.
+                    <!---->
+                    <div class="card-footer bg-primary text-white mt-2">
+                        <i class="fa fa-window-close d-flex justify-content-center" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample"
+                            role="button" style="font-size: 35px; "></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="collapse2" class="accordion-collapse collapse mt-1" aria-labelledby="heading2"
+                data-bs-parent="#imerSight">
+                <div class="accordion-body" id="mdo2">
+                    <div class="card text-center">
+                        <div class="card-header text-white bg-primary mb-1 qalaqiHeader">
+                            <strong>ოკაცის კანიონი</strong>
+                        </div>
+                        <div class="card-body">
+                            <!--<hr class="mt-2" style="height: 10px; ">-->
+                            <p class="card-text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6">
+                                        <img src="./image/sights/okatses.jpg" alt="okatses kanioni" class="img-fluid">
+                                        <ul>
+                                            <dl class="row mt-3">
+                                                <dt>მდებარეობა</dt>
+                                                <dd class="bg-warning mt-1">
+                                                    კანიონი მდებარეობს მდინარე ოკაცეს ხეობაში.
+                                                </dd>
+                                                <dt>კანიონის სიგანე</dt>
+                                                <dd class="bg-warning mt-1">
+                                                    3-6მ
+                                                </dd>
+                                                <dt>სიღრმე</dt>
+                                                <dd class="bg-warning mt-1">
+                                                    20-100მ
+                                                </dd>
+                                                <dt>მოსახლეობა</dt>
+                                                <dd class="bg-warning mt-1"> 147,635 კაცი (2014).</dd>
+                                            </dl>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-12 col-md-6 mt-4">
+                                        <ul class="liC">
+                                            <li class="mt-1">კანიონი 2 კილომეტრზეა გადაჭიმული, ის ჯერჯერიბით
+                                                შეუსწავლელია.</li>
+                                            <li class="mt-1">კანიონის კიროვან ნაპირზე იზრდება საკმაოდ მსხვილი ბზის ხეები
+                                            </li>
+                                            <li class="mt-1">ოკაცეს კანიონზე კიდული ბილიკია მოწყობილი, რომლის გავლას
+                                                დაახლოებით 2-3 საათი სჭირდება.</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <div class="card-header text-white bg-info mb-1">
+                                            <strong>მისაასვლელი გზა</strong>
+                                        </div>
+                                        <ul class="liC">
+                                            <li class="mt-1">1669 წელს ოსმალებმა ქალაქი დაიკავეს და ის ერთი საუკუნის
+                                                განმავლობაში ეკავათ.</li>
+                                            <li class="mt-1">1737 წელს შეიქმნა პირველი ქუთაისის რუკა ის ტიმოთე
+                                                გაბაშვილმა შეადგინა.</li>
+                                            <li class="mt-1">1770 წელს ოსმალები განდევნა სოლომონ I-მა.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </p>
+                        </div>
+                        <div class="card-footer bg-primary text-white">
+                            <i class="fa fa-window-close" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                                aria-expanded="false" aria-controls="collapseExample" role="button"
+                                style="font-size: 35px; "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="collapse3" class="accordion-collapse collapse mt-1" aria-labelledby="heading3"
+                data-bs-parent="#imerSight">
+                <div class="accordion-body1" id="mdo3">
+                    <strong>ბაგრატის ტაძარი</strong> It is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These classes control the overall appearance,
+                    as well as the showing and hiding via
+                    CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                    though the transition does limit overflow.
+                    <!---->
+                    <div class="card-footer bg-primary text-white mt-2">
+                        <i class="fa fa-window-close d-flex justify-content-center" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseExample"
+                            role="button" style="font-size: 35px; "></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--ჩამონათვალი ამის ზემოთ ყოველთვის-->
+    <div class="container mt-5">
+        <div class="row">
+            <button class="btn btn-lg bg-warning" id="backbtn">დამალვა</button>
+        </div>
+    </div>
+
+    <!--main-რაც ჩანს-->
+    <!--გიორგა-->
+    <div class="container mt-5" id="imeretis-samefo">
+        <!--სათაური-->
+        <div class="row bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#imer-samefo-main-info"
+            aria-expanded="false" aria-controls="collapseExample">
+            <div class="col-2">
+                <img src="./image/gerbi/Imeretiflag.jpg" alt="flag of imereti" id="flagImer1"
+                    class="gerbiI img-fluid border border-dark rounded mx-auto d-none d-sm-block">
+            </div>
+            <div class="col-8 d-flex justify-content-center text-white" style="cursor: pointer;"
+                id="imer-samefo-main-click">
+                <h3 class="display-5">იმერეთის სამეფო</h3>
+            </div>
+            <div class="col-2">
+                <img src="./image/gerbi/Imeretiflag.jpg" alt="flag of imereti" id="flagImer1"
+                    class="gerbiI align-self-center  img-fluid border border-dark rounded mx-auto d-none d-sm-block">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid collapse mt-2" id="imer-samefo-main-info">
+        <div class="row">
+            <div class="col-12 ps-5 pe-5 mt-1 d-flex justify-content-center" style="font-size: 1.3rem !important;">
+                <p class="mt-1"></p>
+                <ul class="list-group ">
+                    <li class="list-group-item list-group-item-info">ქართული ფეოდალური სახელმწიფო XV−XIX
+                        საუკუნეებში,წარმოიქმნა <strong>საქართველოს ფეოდალური მონარქიის </strong>პოლიტიკური დაშლის
+                        შედეგად.</li>
+                    <li class="list-group-item list-group-item-info mt-1">XVI საუკუნის დამდეგს იმერეთის სამეფოს
+                        აფხაზეთის სამთავრო ჩამოსცილდა, უფრო გვიან სვანეთი.</li>
+                    <li class="list-group-item list-group-item-warning mt-1">იმერეთის სამეფოს ტერიტორია იმერეთითა და
+                        რაჭით შემოიფარგლა</li>
+                    <li class="list-group-item list-group-item-info mt-1">იმერეთის სამეფოს სატახტო <strong>ქალაქი
+                            ქუთაისი</strong> იყო</li>
+                    <li class="list-group-item list-group-item-info mt-1">XVIII–XIX საუკუნეთა მიჯნაზე ამ სამეფოში
+                        დაახლოებით 120 ათასამდე მცხოვრები იყო.</li>
+                    <li class="list-group-item list-group-item-warning mt-1">1651–1661 წლებში იმერეთის სამეფო ოთხ
+                        სამხედრო-ტერიტორიულ ერთეულად — სადროშოდ ანუ სასარდლოდ დაიყო: <strong>რაჭის, არგვეთის, ვაკისა და
+                            ოკრიბა-ლეჩხუმის.</strong></li>
+                    <li class="list-group-item list-group-item-danger mt-1">1810 წელს რუსეთის თვითმპყრობელობამ გააუქმა
+                        იმერეთის სამეფო და იქ თავისი მმართველობა დაამყარა.</li>
+                </ul>
+            </div>
+            <hr class="mt-2 " style="height: 10px; ">
+            <!--მარცხენა სექცია-->
+            <div class="col-sm-6 mt-2">
+                <div class="card text-center">
+                    <div class="card-header">
+                        იმერეთის სამეფო
+                        <strong style="font-size: 1.2rem !important;">XVII-</strong>საუკუნე
+                    </div>
+                    <div class=" card-body ">
+                        <h5 class="card-title ">Special title treatment</h5>
+                        <p class="card-text ">აქ იმერეთზე რაიმე უცნობი და საინტერესო</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">1600 წელს გარდაიცვალა გიორგი II გურიელი</li>
+                            <li class="list-group-item">1605 წელს გარდაიცვლა იმერეთის მეფე როსტომი</li>
+                            <li class="list-group-item">გამეფდა როსტომის ნახევარძმა გიორგი კონსტანტინეს ძე (1605-1639
+                                წწ.)</li>
+                            <li class="list-group-item">იმერეთში იწყება შიდა აშლილობა რომლის სათავეშიც დგას
+                                <strong>სამეგრელოს მთავარი ლევან II დადიანი</strong></li>
+                            <li class="list-group-item">1618 წელს გიორგი III-მ თავის შვილს ალექსანდრეს ცოლად შერთო მამია
+                                გურიელის ასული თამარი</li>
+                            <li class="list-group-item">1681 წელს გარდაიცვალა უსინათლო მეფე ბაგრატ IV, მას კანონიერი
+                                მემკვიდრე არ დარჩენია, ხოლო უკანონო შვილი ალექსანდრე ქართლში ჰყავდა ტყვედ გიორგი XI-ს
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-muted ">
+                        2 days ago
+                    </div>
+                </div>
+            </div>
+            <!--მარჯვენა სექცია-->
+            <div class="col-sm-6 mt-2">
+                <div class="card text-center ">
+                    <div class="card-header ">
+                        იმერეთის სამეფო <strong style="font-size: 1.2rem !important;">XVIII-</strong>საუკუნე
+                    </div>
+                    <div class="card-body ">
+                        <h5 class="card-title ">Special title treatment</h5>
+                        <p class="card-text ">XVII საუკუნის II ნახევარი დასავლეთ საქართველოში მკაცრი შინაფეოდალური
+                            ომებით აღინიშნა</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-warning rounded"> 40 წლის მანძილზე (1660-1701 წწ.) იმერეთში
+                                ჩვიდმეტჯერ გადააგდეს ტახტიდან მეფე, ამათგან 4 მოკლეს, ხოლო 13 გააძევეს</li>
+                            <li class="list-group-item">პოეტი-მეფე არჩილი ხუთჯერ დასვეს ტახტზე და ხუთჯერვე გადმოაგდეს
+                            </li>
+                            <li class="list-group-item">სიმონ მეფის მოკვლის შემდეგ (1701 წ.) იმერეთის დიდი თავადების
+                                შეთანხმების მიხედვით სამეფო ტახტზე მამია III გურიელი (პირველად, 1701-1702 წწ.),გურიელმა
+                                თვითონ თქვა უარი სამეფო ტახტზე</li>
+                            <li class="list-group-item">იმერეთის გამგებლობა მეორე უზურპატორის, გიორგი აბაშიძის
+                                (1702-1707 წწ.) ხელში გადავიდ</li>
+                            <li class="list-group-item">1703 წელს მან უარი განაცხადა ოსმალეთის მორჩილებაზე და ახალციხის
+                                ფაშას უარი უთხრა ხარკის გადახდაზე.</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer text-muted ">
+                        2 days ago
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container bg-warning mt-2">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center ">
+                    <i class="fa fa-window-close" data-bs-toggle="collapse" data-bs-target="#imer-samefo-main-info"
+                        aria-expanded="false" aria-controls="collapseExample" role="button"
+                        style="font-size: 35px; "></i>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--მენიუ-->
+    <div class="container p-1 " id="imereti-meniu ">
+        <hr class="mt-5 " style="height: 10px; ">
+        <!--სურათეები  d-sm-none d-md-block-->
+        <div class="container " id="imgTop " style="display: none; ">
+            <div class="row justify-content-between ">
+                <div class="col-1 col-md-3 col-sm-2 col-lg-2 mt-3 ">
+                    <img src="./image/sxva/afxazeti.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; width: mx-auto; " id="color1 " id="afxazeti ">
+                </div>
+                <div class="col-1 col-md-3 col-sm-2 col-lg-2 mt-3 ">
+                    <img src="./image/sxva/samegrelo.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color2 ">
+                </div>
+                <div class="col-1 col-md-3 col-sm-2 col-lg-2 mt-3 ">
+                    <img src="./image/sxva/imereti.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color3 ">
+                </div>
+                <div class="col-1 col-md-3 col-sm-2 col-lg-2 mt-3 ">
+                    <img src="./image/sxva/guria.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color4 ">
+                </div>
+                <div class="col-1 col-md-3 col-sm-2 col-lg-2 mt-3 ">
+                    <img src="./image/sxva/mcxeta.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color5 ">
+                </div>
+                <div class="col-1 col-md-3 col-sm-2 col-lg-2 mt-3 ">
+                    <img src="./image/sxva/khaxeti.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color6 ">
+                </div>
+                <div class="col-1 col-sm-3 mt-3 col-lg-2 ">
+                    <img src="./image/sxva/shida-qartli.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color7 ">
+                </div>
+                <div class="col-1 col-sm-3 mt-3 col-lg-2 ">
+                    <img src="./image/sxva/racha.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color8 ">
+                </div>
+                <div class="col-1 col-sm-3 mt-3 col-lg-2 ">
+                    <img src="./image/sxva/qvemo-qartli.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color9 ">
+                </div>
+                <div class="col-1 col-sm-3 mt-3 col-lg-2 ">
+                    <img src="./image/sxva/samcxe-javaxeti.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color10 ">
+                </div>
+                <div class="col-1 col-sm-3 mt-3 col-lg-2 ">
+                    <img src="./image/sxva/adjara.png " class="card-img-top img-fluid img-thumbnail "
+                        style="height: 150px; " id="color11 ">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 "
+        crossorigin="anonymous "></script>
+
+    <script src="./imereti.js "></script>
+    <script src="./Geo.js "></script>
+</body>
